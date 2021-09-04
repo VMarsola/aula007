@@ -1,0 +1,49 @@
+div {
+  .container {
+    margin: 40px 40px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #f9f9f9;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .fileira {
+    margin: 20px 0;
+  }
+  .p-video {
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 250px;
+      height: 140px;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .titulo {
+    margin: 4px 0 0 0;
+  }
+
+  .p-video .imagem-canal {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  .p-video .canal {
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    margin: 0 0 0 3rem;
+  }
+}
