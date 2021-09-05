@@ -1,0 +1,59 @@
+aside {
+  .side-menu {
+    width: 240px;
+    height: 100vh;
+
+    .top-menu {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      svg {
+        width: 97px;
+        height: 56px;
+        fill: $text;
+      }
+
+      .hamburguer {
+        width: 24px;
+        height: $svg-size;
+        fill: $text;
+        margin: 0 24px 0 0;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: $text;
+          margin: 0 24px 0 0;
+        }
+      }
+    }
+
+    .sections {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      div {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+
+        svg {
+          height: 24px;
+          width: $svg-size;
+          fill: $text;
+          margin: 0 24px 0 0;
+        }
+        p {
+          color: $text;
+          font: normal 500 14px "roboto", sans-serif;
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
