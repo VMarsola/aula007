@@ -1,0 +1,47 @@
+aside {
+}
+
+.side-menu {
+  width: 240px;
+  height: 100vh;
+
+  .top-menu {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+
+    svg {
+      width: 120px;
+      height: $svg-size;
+      fill: $text;
+    }
+
+    .hamburguer {
+      width: 24px;
+      height: $svg-size;
+      fill: $text;
+      margin: 0 24px 0 0;
+    }
+  }
+  .sections {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .sections div {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .sections div:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .sections div svg {
+    height: 24px;
+    width: $svg-size;
+    fill: $text;
+    margin: 0 24px 0 0;
+  }
+  .sections div p {
+    color: $text;
+    font: normal 500 14px "roboto", sans-serif;
+  }
+}
