@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif;
+
+  .wrapper-end  {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $gray-50;
+   
+   .fileira {
+    margin: 20px 0px;
+   } 
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-texto {
+      width: 431px;
+      height: 30px;
+      border: 1px solid $gray-100;
+      padding: 2px 6px;
+    }
+  
+    .input-texto::-webkit-input-placeholder {
+      color: $gray-100;
+      font-size: 16px;
+    }
+  
+    .input-botao {
+      width: 65px;
+      height: 30px;
+      border: none;
+      border-radius: 0 2px 2px 0;
+      border: 1px solid $gray-100;
+      background: $white-50;
+      ;
+    }
+  
+    .input-botao svg {
+      fill: $gray-150;
+    }
+  
+    .microfone svg {
+      fill: $gray-200;
+    }
+    
+    .menu-direito svg {
+      width: 24px;
+      height: 24px;
+      fill: $gray-200;
+      margin: 0 15px 0 15px;
+    }
+    .menu-direito img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+      margin: 0 15px 0 15px;
+    }
+    
+    .busca {
+      display: flex;
+      align-items: center;
+    }
+    
+    .busca .microfone {
+      width: 24px;
+    }
+    
+  }
+  
+  .categorias {
+    margin: 5px;
+    text-align: right;
+    padding: 0px 0 20px 0;
+    border-bottom: 1px solid $gray-50;
+  
+    input[type="radio"] {
+      opacity: 0;
+      position: fixed;
+      width: 0;
+    }
+  
+    label {
+      display: inline-block;
+      background-color: $white-100;
+      padding: 6px 12px;
+      font-size: 14px;
+      border: 1px solid $gray-300;
+      border-radius: 16px;
+      margin: 0 7px;
+      border-color: $white-150;
+      
+    }
+  
+    label:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+  
+    input[type="radio"]:checked + label{
+      background-color: $black-100;
+      border-color: $black-50;
+      color: $gray;
+    }
+  
+    input[type="radio"]:checked:focus + label{
+      background-color: $gray-250;
+      border-color: $black-50;
+      color: $gray;
+    }
+  
+    input[type="radio"]:checked + label:hover {
+      background-color: $gray-250;
+      border-color: $black-50;
+      color: $gray;
+    }
+  }
+}

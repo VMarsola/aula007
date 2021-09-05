@@ -1,1 +1,21 @@
+$white-50: #f8f8f8;
+$white-100: #f2f2f2;
+$white-150: #d9d9d9;
+
+$gray: #dcdcdc;
+$gray-50: #e5e5e5;
+$gray-100: #CCCCCC;
+$gray-150: #828282;
+$gray-200: #606060;
+$gray-250: #909090;
+$gray-300: #444;
+
+$black-50: #0000001a;
+$black-100: #030303;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 @import "reset";
+@import "top-menu";
