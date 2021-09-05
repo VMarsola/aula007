@@ -1,0 +1,41 @@
+div {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: $background;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .p-video {
+    margin: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 250px;
+      height: 140px;
+
+      span {
+        @include title();
+      }
+    }
+  }
+  .titulo {
+    margin: 4px 0 0 0;
+  }
+
+  .p-video .imagem-canal {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+  }
+  .p-video .canal {
+    @include text();
+  }
+}

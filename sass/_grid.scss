@@ -1,7 +1,13 @@
 body {
   display: flex;
+  font-family: "Roboto", sans-serif;
 
   .main-content {
     width: 100%;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+    }
   }
 }

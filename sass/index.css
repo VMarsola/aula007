@@ -19,10 +19,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 
 body .main-content {
   width: 100%;
+}
+
+body .main-content .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[4];
+      grid-template-columns: repeat(4, 2fr);
 }
 
 aside .side-menu {
@@ -171,7 +179,6 @@ nav .fileira {
 }
 
 nav .categorias {
-  font-family: "Roboto", sans-serif;
   padding: 12px 0;
   margin: 5px;
   border-bottom: 1px solid #e5e5e5;
@@ -215,5 +222,67 @@ nav .categorias input[type="radio"]:checked + label:hover {
   background-color: #909090;
   border-color: #0000001a;
   color: #dcdcdc;
+}
+
+div .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: #f9f9f9;
+}
+
+div .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div .p-video {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div .p-video img {
+  width: 250px;
+  height: 140px;
+}
+
+div .p-video img span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div .titulo {
+  margin: 4px 0 0 0;
+}
+
+div .p-video .imagem-canal {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+div .p-video .canal {
+  font-size: 14px;
+  font-weight: 400;
+  color: #606060;
+  margin: 0 0 0 3rem;
 }
 /*# sourceMappingURL=index.css.map */
