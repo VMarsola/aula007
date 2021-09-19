@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+//colors
 $text: #030303;
 $background: #f9f9f9;
 $text-canal: #606060;
 
-$svg-size: 24px;
 $white-50: #f8f8f8;
 $white-100: #f2f2f2;
 $white-150: #d9d9d9;
@@ -19,6 +19,14 @@ $gray-300: #444;
 
 $black-50: #0000001a;
 $black-100: #030303;
+
+// default sizes
+$svg-size: 24px;
+
+//media sizes
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
 
 @import "reset";
 @import "grid";
