@@ -33,6 +33,36 @@ body .main-content .grid {
       grid-template-columns: repeat(4, 2fr);
 }
 
+@media screen and (max-width: 1024px) {
+  body .main-content .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .main-content .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body .main-content .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
 aside .side-menu {
   width: 240px;
   height: 100vh;
