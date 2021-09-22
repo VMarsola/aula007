@@ -19,10 +19,9 @@ div {
     img {
       width: 250px;
       height: 140px;
-
-      span {
-        @include title();
-      }
+    }
+    span {
+      @include title();
     }
   }
   .titulo {
