@@ -155,6 +155,12 @@ nav .wrapper-end .input-texto {
   padding: 2px 6px;
 }
 
+@media screen and (max-width: 768px) {
+  nav .wrapper-end .input-texto {
+    display: none;
+  }
+}
+
 nav .wrapper-end .input-texto::-webkit-input-placeholder {
   color: #cccccc;
   font-size: 16px;
@@ -171,6 +177,12 @@ nav .wrapper-end .input-botao {
 
 nav .wrapper-end .input-botao svg {
   fill: #828282;
+}
+
+@media screen and (max-width: 768px) {
+  nav .wrapper-end .input-botao {
+    display: none;
+  }
 }
 
 nav .wrapper-end .microfone svg {
@@ -202,6 +214,33 @@ nav .wrapper-end .busca {
 
 nav .wrapper-end .busca .microfone {
   width: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  nav .wrapper-end .busca .microfone {
+    margin: 0 15px 0 15px;
+  }
+}
+
+nav .wrapper-end .lupa-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .wrapper-end .lupa-mobile {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .wrapper-end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 nav .fileira {
