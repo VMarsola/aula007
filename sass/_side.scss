@@ -8,10 +8,14 @@ aside {
       align-items: center;
       padding: 0 20px;
 
-      svg {
+      .logo {
         width: 97px;
         height: 56px;
         fill: $text;
+
+        @media screen and (max-width: $tablet) {
+          display: none;
+        }
       }
 
       .hamburguer {
@@ -25,6 +29,10 @@ aside {
           height: 24px;
           fill: $text;
           margin: 0 24px 0 0;
+        }
+
+        @media screen and (max-width: $tablet) {
+          margin: 10px 0;
         }
       }
     }
@@ -42,10 +50,17 @@ aside {
           width: $svg-size;
           fill: $text;
           margin: 0 24px 0 0;
+          @media screen and (max-width: $tablet) {
+            margin: 0;
+          }
         }
         p {
           color: $text;
           font: normal 500 14px "roboto", sans-serif;
+
+          @media screen and (max-width: $tablet) {
+            font: normal 300 10px "roboto", sans-serif;
+          }
         }
 
         &:hover {
@@ -53,7 +68,20 @@ aside {
 
           cursor: pointer;
         }
+
+        @media screen and (max-width: $tablet) {
+          flex-direction: column;
+        }
       }
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 100px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
